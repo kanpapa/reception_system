@@ -1,0 +1,11 @@
+[submodule "simple_push_button"]
+	path = simple_push_button
+	url = https://github.com/sibafb/simple_push_button.git
+[submodule "ros_bridge_sandbox"]
+	path = ros_bridge_sandbox
+	url = https://github.com/sibafb/ros_bridge_sandbox.git
+	branch = reception
+[submodule "human_sensor"]
+	path = human_sensor
+	url = https://github.com/sibafb/human_sensor.git
+	branch = reception
