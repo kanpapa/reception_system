@@ -1,3 +1,5 @@
 <launch>
-    
+    <include file="$(find human_sensor)/launch/human_sensor.launch"/>
+    <include file="$(find ros_bridge_sandbox)/launch/bridge.launch"/>
+    <include file="$(find simple_push_button)/launch/push_button.launch"/>
 </launch>
