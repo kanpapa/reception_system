@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="reception_main" type="reception_main.py" name="reception_main" output="screen"> </node>
+</launch>

@@ -4,5 +4,6 @@
     <include file="$(find simple_push_button)/launch/push_button.launch"/>
 
     <!-- main node-->
-    <node pkg="reception_main" type="receprion_main.py" name="reception_main" output="screen"> </node>
+    <include file="$(find reception_main)/launch/reception_main.launch"/>
+
 </launch>
