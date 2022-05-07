@@ -2,4 +2,7 @@
     <include file="$(find human_sensor)/launch/human_sensor.launch"/>
     <include file="$(find ros_bridge_sandbox)/launch/bridge.launch"/>
     <include file="$(find simple_push_button)/launch/push_button.launch"/>
+
+    <!-- main node-->
+    <node pkg="reception_main" type="receprion_main.py" name="reception_main" output="screen"> </node>
 </launch>
