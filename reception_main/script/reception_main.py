@@ -13,8 +13,9 @@ rospy.init_node('reception_main',anonymous=True)
 led_blink = rospy.ServiceProxy( 'buttun_led_blink', simple_push_button.srv.Buttionblink )
 
 def cb_human_detect(data):
+    rospy.loginfo("main cb_human_detect")
     led_blink()
-    
+
 
 rospy.Subscliber( 'human_detect', cb_human_detect)
 
