@@ -45,7 +45,7 @@
 
 1. ブラウザを開き、下記にアクセス
 
-http://localhost:8085/ros_bridge_sandbox/ac_and_sub_topics.html
+   http://localhost:8085/ros_bridge_sandbox/ac_and_sub_topics.html
 
 
 # pin assign
