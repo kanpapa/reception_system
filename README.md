@@ -43,8 +43,18 @@
    roslaunch reception_main reception_main.launch
    ```
 
+1. ブラウザを開き、下記にアクセス
+
+http://localhost:8085/ros_bridge_sandbox/ac_and_sub_topics.html
+
 
 # pin assign
+
+|  Sensor  |  GPIO  |
+| ---- | ---- |
+|  human_sensor  |  22  |
+|  push_button  |  23  |
+|  push_button_led  |  25  |
 
 ```
 pi@raspberrypi:~ $ pinout
