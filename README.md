@@ -1,6 +1,60 @@
 # reception_system
 
+# 使い方
+
+1. docker コンテナの起動
+
+   ```
+   git clone https://github.com/sibafb/akiemon_dockerfiles.git
+   cd ./dockerfiles/noetic-create-raspi
+   ./build_docker_image.bash
+   ./run-docker_container.bash
+   ```
+
+1. 受付システムのRasberryPiで本リポジトリをクローン
+
+   ```
+   git clone https://github.com/sibafb/reception_system.git --recursive
+   ```
+
+1. Catkin make する
+
+   ```
+   catkin_make 
+   ```
+
+1. IPアドレスを編集する
+
+
+   ```
+   ac_and_sub_topics.html
+   const ros_server = 'ws://192.168.0.XXX:9090';　// Roomba側のIPアドレス
+   ```
+
+1. Roomba側のrosbridgeを起動
+
+   ```
+   roslaunch rosbridge_server rosbridge_websocket.launch
+   ```
+
+1. roslaunchを起動
+
+   ```
+   roslaunch reception_main reception_main.launch
+   ```
+
+1. ブラウザを開き、下記にアクセス
+
+   http://localhost:8085/ros_bridge_sandbox/ac_and_sub_topics.html
+
+
 # pin assign
+
+|  Sensor  |  GPIO  |
+| ---- | ---- |
+|  human_sensor  |  22  |
+|  push_button  |  23  |
+|  push_button_led  |  25  |
 
 ```
 pi@raspberrypi:~ $ pinout
