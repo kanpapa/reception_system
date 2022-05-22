@@ -40,7 +40,7 @@
 1. roslaunchを起動
 
    ```
-   roslaunch reception_main reception_main.launch
+   roslaunch reception_main reception_system.launch
    ```
 
 1. ブラウザを開き、下記にアクセス
