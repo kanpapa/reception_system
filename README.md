@@ -31,12 +31,6 @@
    const ros_server = 'ws://192.168.0.XXX:9090';　// Roomba側のIPアドレス
    ```
 
-1. Roomba側のrosbridgeを起動
-
-   ```
-   roslaunch rosbridge_server rosbridge_websocket.launch
-   ```
-
 1. roslaunchを起動
 
    ```
@@ -46,6 +40,12 @@
 1. ブラウザを開き、下記にアクセス
 
    http://localhost:8085/ros_bridge_sandbox/ac_and_sub_topics.html
+
+1. Roomba側のrosbridgeを起動
+
+   ```
+   roslaunch rosbridge_server rosbridge_websocket.launch
+   ```
 
 
 # pin assign
