@@ -2,6 +2,8 @@
 
 # 使い方
 
+## インストール、ブラウザで確認
+
 1. docker コンテナの起動
 
    ```
@@ -23,15 +25,11 @@
    catkin_make 
    ```
 
-1. IPアドレスを編集する
-
-
-   ```
-   ac_and_sub_topics.html
-   const ros_server = 'ws://192.168.0.XXX:9090';　// Roomba側のIPアドレス
-   ```
-
 1. roslaunchを起動
+
+   ```
+   source devel/setup.bash
+   ```
 
    ```
    roslaunch reception_main reception_system.launch
@@ -40,6 +38,15 @@
 1. ブラウザを開き、下記にアクセス
 
    http://localhost:8085/ros_bridge_sandbox/ac_and_sub_topics.html
+
+#＃ Roombaとつなげる。
+
+1. 接続先のRoombaのIPアドレスを設定編集する
+
+   ```
+   ac_and_sub_topics.html
+   const ros_server = 'ws://192.168.0.XXX:9090';　// Roomba側のIPアドレス
+   ```
 
 1. Roomba側のrosbridgeを起動
 
