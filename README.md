@@ -39,7 +39,7 @@
 
    http://localhost:8085/ros_bridge_sandbox/ac_and_sub_topics.html
 
-#＃ Roombaとつなげる。
+## Roombaとつなげる。
 
 1. 接続先のRoombaのIPアドレスを設定編集する
 
