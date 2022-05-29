@@ -8,7 +8,7 @@
 
    ```
    git clone https://github.com/sibafb/akiemon_dockerfiles.git
-   cd ./dockerfiles/noetic-create-raspi
+   cd ./dockerfiles/noetic-raspi/
    ./build_docker_image.bash
    ./run-docker_container.bash
    ```
