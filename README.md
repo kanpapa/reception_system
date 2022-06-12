@@ -12,10 +12,13 @@ graph TD
     A --> E[reception_main.launch]
     B --> F(h_sensor)
     C --> G[roswww.launch]
+    G --> G1(roswww)
     C --> H[rosbridge_websocket.launch]
-    H --> I(bridge)
+    H --> I(rosbridge_websocket)
+    H --> I1(rosapi)
     D --> J(button_pushed)
     E --> K(reception_main)
+    G --> L(roswww)
 ```
 
 # 使い方
