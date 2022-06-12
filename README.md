@@ -1,5 +1,23 @@
 # reception_system
 
+# システム構成
+
+# Launchファイルと起動されるnodeの関連図
+
+```mermaid
+graph TD
+    A[reception_system.launch] --> B[human_sensor.launch]
+    A --> C[bridge.launch]
+    A --> D[push_button.launch]
+    A --> E[reception_main.launch]
+    B --> F(h_sensor)
+    C --> G[roswww.launch]
+    C --> H[rosbridge_websocket.launch]
+    H --> I(bridge)
+    D --> J(button_pushed)
+    E --> K(reception_main)
+```
+
 # 使い方
 
 ## インストール、ブラウザで確認
